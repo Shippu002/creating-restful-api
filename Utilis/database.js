@@ -54,17 +54,17 @@ export const products = [
   },
   {
     id: 2,
-    name: "Agbaje Lawal",
+    name: "bikes",
     licence: "01246789",
   },
   {
     id: 3,
-    name: "Odede Malike",
+    name: "choppers",
     licence: "01390654",
   },
   {
     id: 4,
-    name: "Abdulsalam Abdullah",
+    name: "planes",
     licence: "01447489",
   },
 ];

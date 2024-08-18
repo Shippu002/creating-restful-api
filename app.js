@@ -1,7 +1,7 @@
 import express from "express";
 import postRoute from "./router/post.js"
 import userRoute from "./router/user.js"
-import productRoute from "./router/product.js"
+import productRoute from "./router/"
 
 
 // initialize express app
