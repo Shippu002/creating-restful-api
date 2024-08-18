@@ -7,7 +7,7 @@ export const getAllPost = (req, res) => {
   });
 };
 
-export const getApost = (req, res) => {
+export const getAPost = (req, res) => {
   // console.log(req.params)
   const id = parseInt(req.params.id);
   const post = posts.find((p) => p.id === id);

@@ -1,10 +1,10 @@
 import express from "express";
-import { getAllPost, Post } from "../controller/post.js";
-import { getApost } from "../controller/post.js";
+import { getAllPost } from "../controller/post.js";
+import { getAPost } from "../controller/post.js";
 import { deletePost } from "../controller/post.js";
 import { postAPost } from "../controller/post.js";
 import { putAPost } from "../controller/post.js";
-import { posts } from "../Utilis/database.js";
+// import { posts } from "../Utilis/database.js";
 
 const router = express.Router();
 
@@ -19,7 +19,7 @@ const router = express.Router();
 // });
 
 // get all posts
-router.get("/", getAllPost)
+router.get("/", getAllPost);
 
 // get a single post
 // router.get("/api/v1/posts/:id", (req, res) => {
@@ -27,15 +27,14 @@ router.get("/", getAllPost)
 //   const id = parseInt(req.params.id)
 //   res.send(posts.filter((post) => post.id === id))
 // })
-router.get("/:id", getApost);
+router.get("/:id", getAPost);
 
-router.delete("/:id", deletePost)
+router.delete("/:id", deletePost);
 
 // create new post
 router.post("/", postAPost);
 
 // update post
-router.put("/", putAPost)
-
+router.put("/", putAPost);
 
 export default router;
